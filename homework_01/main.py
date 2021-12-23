@@ -22,11 +22,14 @@ PRIME = "prime"
 
 
 def is_prime(num):
-    for i in range(2, int(num/2)+1):
-        if num % i == 0:
-            return False
+    if num > 1:
+        for i in range(2, int(num/2)+1):
+            if num % i == 0:
+                return False
 
-    return True
+        return True
+
+    return False
 
 
 def filter_numbers(nums, option):
@@ -38,7 +41,7 @@ def filter_numbers(nums, option):
     [1, 3]
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     [2, 4]
-    >>> filter_numbers([2, 3, 4, 5, 6, 7, 9, 13], PRIME)
+     >>> filter_numbers([2, 3, 4, 5, 6, 7, 9, 13], PRIME)
     [2, 3, 5, 7, 13]
     """
     if option == ODD:
