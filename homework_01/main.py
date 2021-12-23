@@ -41,10 +41,9 @@ def filter_numbers(nums, option):
     >>> filter_numbers([2, 3, 4, 5, 6, 7, 9, 13], PRIME)
     [2, 3, 5, 7, 13]
     """
-    match option:
-        case "odd":
-            return list(filter(lambda i: i % 2 != 0, nums))
-        case "even":
-            return list(filter(lambda i: i % 2 == 0, nums))
-        case "prime":
-            return list(filter(lambda i: is_prime(i), nums))
+    if option == ODD:
+        return list(filter(lambda i: i % 2 != 0, nums))
+    elif option == EVEN:
+        return list(filter(lambda i: i % 2 == 0, nums))
+    elif option == PRIME:
+        return list(filter(lambda i: is_prime(i), nums))
