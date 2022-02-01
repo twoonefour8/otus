@@ -1,11 +1,10 @@
-from abc import ABC
-
+from dataclasses import dataclass
 """
 create dataclass `Engine`
 """
 
 
-class Engine(ABC):
-    def __init__(self, volume, pistons):
-        self.volume = volume
-        self.pistons = pistons
+@dataclass
+class Engine:
+    volume: int
+    pistons: int

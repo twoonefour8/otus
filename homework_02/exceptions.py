@@ -6,8 +6,9 @@
 """
 
 
-class LowFuelError(BaseException):
-    pass
+class LowFuelError(Exception):
+    def __str__(self):
+        return 'Нет топлива'
 
 
 class NotEnoughFuel(Exception):
