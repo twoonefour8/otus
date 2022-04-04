@@ -9,7 +9,7 @@ from homework_04.models import User, Post
 from typing import List, Any
 
 
-COUNT = 5
+COUNT = 10
 USERS_DATA_URL = "https://jsonplaceholder.typicode.com/users"
 POSTS_DATA_URL = "https://jsonplaceholder.typicode.com/posts"
 
