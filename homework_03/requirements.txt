@@ -2,6 +2,7 @@ anyio==3.5.0
 asgiref==3.5.0
 attrs==21.4.0
 click==8.0.4
+docker==5.0.3
 Faker==11.3.0
 fastapi==0.74.1
 h11==0.13.0

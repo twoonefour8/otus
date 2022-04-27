@@ -4,7 +4,7 @@ from fastapi import FastAPI, Response
 app = FastAPI()
 
 
-@app.get('/ping')
+@app.get('/ping/')
 def pong():
     return Response(
         status_code=200,
